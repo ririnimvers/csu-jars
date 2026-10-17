@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kink Jars</title>
+<title>CSU Jars</title>
 <meta name="description" content="Fill your jars, pick your color, save your picture.">
 <meta property="og:title" content="Kink Jars">
 <meta property="og:description" content="Fill your jars, pick your color, save your picture.">
@@ -161,16 +161,16 @@
 <script>
 /* ===== Edit the jars here. Each array is the label, one entry per line. ===== */
 const JARS = [
-  ["being","a dom"],["being","a sub"],["being","a switch"],["choking"],["being","choked"],["spanking"],["being","spanked"],
-  ["ddlg / mdlb"],["age","play"],["doing stuff","in public"],["wax","play"],["water","sports"],["role","play"],["consensual","non consent"],
-  ["having","orgasms","controlled"],["controlling","orgasms"],["gags"],["feet"],["anal"],["being","tied up"],["tying","people up"],
-  ["humiliating","or","degrading"],["being","humiliated","or","degraded"],["bdsm"],["threesomes"],["sadism"],["masochism"],["spit"]
+  ["chass","students"],["cegs","students"],["cmns","students"],["cofes" , "students"],["ced","students"],["ccis" , "students"],["caa","students"],
+  ["7am" , "classes"],["library","tambay"],["love" , "entrada"],["love","sangka"],["love","lco days"],["7am" , "classes"],["long breaks","between", "scheds"],
+  ["field tambay"],["first","friend", "group"],["current", "friend","group"],["freedom","wall"],["campus", "dogs"],["campus","cats"],["facilities"],
+  ["organizations"],["instructors"],["attending","csu", "events"],["your","program"],["your","batch/classmates"],["carabao","center"],["campus","food"]
 ];
 const PRESETS = ["#e63946","#ff5d8f","#ff8c42","#ffd23f","#7bd389","#2ec4b6","#3a86ff","#5b2a86","#c77dff","#8d1d3a","#8d5524","#2b2d42"];
 const COLS = 7, INK = "#151311", PW = 1200;
 const ROWS = Math.ceil(JARS.length / COLS);
 const PH = 260 + (ROWS - 1) * 345 + 360;
-const STORE = "kinkjars-v1";
+const STORE = "csujars-v1";
 
 /* ===== state ===== */
 let state = { name: "", color: "#e63946", answers: JARS.map(() => 0) };
