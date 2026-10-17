@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CSU Jars</title>
 <meta name="description" content="Fill your jars, pick your color, save your picture.">
-<meta property="og:title" content="Kink Jars">
+<meta property="og:title" content="CSU Jars">
 <meta property="og:description" content="Fill your jars, pick your color, save your picture.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -361,9 +361,9 @@ function drawPoster(canvas, scale) {
 
   c.fillStyle = INK; c.textBaseline = "alphabetic"; c.textAlign = "left";
   c.font = "700 104px Oswald, Impact, 'Arial Narrow', sans-serif";
-  const tw = c.measureText("Kink Jars").width, lineW = 360, gap = 26, x0 = (PW - lineW - gap - tw) / 2, base = 140;
+  const tw = c.measureText("CSU Jars").width, lineW = 360, gap = 26, x0 = (PW - lineW - gap - tw) / 2, base = 140;
   c.fillRect(x0, base - 5, lineW, 7);
-  c.fillText("Kink Jars", x0 + lineW + gap, base);
+  c.fillText("CSU Jars", x0 + lineW + gap, base);
   const name = state.name.trim();
   if (name) {
     let size = 66; c.font = `${size}px "Permanent Marker", "Comic Sans MS", cursive`;
@@ -461,7 +461,7 @@ async function save() {
   drawPoster(out, 2);
   const blob = await new Promise(res => out.toBlob(res, "image/png"));
   const slug = state.name.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-  const fname = (slug ? slug + "-" : "") + "kink-jars.png";
+  const fname = (slug ? slug + "-" : "") + "csu-jars.png";
   const file = new File([blob], fname, { type: "image/png" });
   const touch = matchMedia("(pointer: coarse)").matches;
   if (touch && navigator.canShare && navigator.canShare({ files: [file] })) {
